@@ -19,6 +19,10 @@ public class GameEngine implements IGameEngine {
         handlers.put("print", new PrintHandler());
     }
 
+    public GameCond getCondition() {
+        return condition;
+    }
+
     @Override
     public void exec(Command command) {
         if (command == null) {

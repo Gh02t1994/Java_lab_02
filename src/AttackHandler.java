@@ -38,6 +38,10 @@ public class AttackHandler implements IHandlerCommand {
 
         condition.damage_Unit(unId_2, unit_1.getDamage());
 
-        System.out.println(unId_1 + " атаковал " + unId_2);
+        condition.getEventManager().Sent_notify("Юнит " + unId_1 + " атаковал " + unId_2);
+
+        if (unit_2.getHealth() <= 0) {
+            condition.getEventManager().Sent_notify("Юнит " + unId_2 + " погиб");
+        }
     }
 }

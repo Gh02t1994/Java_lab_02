@@ -6,11 +6,13 @@ public class GameCond {
     private Map map;
     private Unit[] units;
     private Building[] buildings;
+    private EventManager eventManager;
 
     public GameCond() {
         this.started = false;
         this.units = new Unit[0];
         this.buildings = new Building[0];
+        this.eventManager = new EventManager();
     }
 
     public boolean isStarted() {
@@ -35,6 +37,10 @@ public class GameCond {
 
     public Building[] getBuildings() {
         return buildings;
+    }
+
+    public EventManager getEventManager() {
+        return eventManager;
     }
 
     public Unit findUnit(String id) {

@@ -5,6 +5,9 @@ public static void main(String[] args) {
     GameEngine engine = new GameEngine();
     Parser parser = new Parser();
 
+    ConsoleLog logger = new ConsoleLog();
+    engine.getCondition().getEventManager().subscribe(logger);
+
     while (true) {
         String line = scanner.nextLine();
 
