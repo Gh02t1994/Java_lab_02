@@ -9,7 +9,11 @@ public class Executer {
 
     public void run(Command[] commands) {
         for (Command command : commands) {
-            engine.exec(command);
+            try {
+                engine.exec(command);
+            } catch (Exception e) {
+                System.out.println("Ошибка: " + e.getMessage());
+            }
         }
     }
 }
