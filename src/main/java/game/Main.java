@@ -29,19 +29,23 @@ public class Main {
 
         scanner.close();
 
-        //    GameEngine engine = new GameEngine();
-        //    Executer executer = new Executer(engine);
-        //
-        //    Command[] commands = {
-        //            new Command("initMap", new String[]{"10", "10"}),
-        //            new Command("addUnit", new String[]{"unit1", "warrior", "1", "1"}),
-        //            new Command("addUnit", new String[]{"unit2", "archer", "2", "2"}),
-        //            new Command("startGame", new String[]{}),
-        //            new Command("move", new String[]{"unit1", "3", "3"}),
-        //            new Command("attack", new String[]{"unit1", "unit2"}),
-        //            new Command("print", new String[]{})
-        //    };
-        //
-        //    executer.run(commands);
+//            GameEngine engine = new GameEngine();
+//            Executer executer = new Executer(engine);
+//
+//            ConsoleLog logger = new ConsoleLog();
+//            engine.getCondition().getEventManager().subscribe(logger);
+//
+//            Command[] commands = {
+//                    new Command("initMap", new String[]{"10", "10"}),
+//                    new Command("addUnit", new String[]{"unit1", "warrior", "1", "1"}),
+//                    new Command("addUnit", new String[]{"unit2", "archer", "2", "2"}),
+//                    new Command("startGame", new String[]{}),
+//                    new Command("build", new String[]{"build1", "barracks", "5", "5"}),
+//                    new Command("move", new String[]{"unit1", "3", "3"}),
+//                    new Command("attack", new String[]{"unit1", "unit2"}),
+//                    new Command("print", new String[]{})
+//            };
+//
+//            executer.run(commands);
     }
 }
