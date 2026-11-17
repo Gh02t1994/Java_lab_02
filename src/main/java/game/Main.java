@@ -43,7 +43,7 @@ public class Main {
 //                    new Command("build", new String[]{"build1", "barracks", "5", "5"}),
 //                    new Command("move", new String[]{"unit1", "3", "3"}),
 //                    new Command("attack", new String[]{"unit1", "unit2"}),
-//                    new Command("print", new String[]{})
+//                    new Command("printUnits", new String[]{})
 //            };
 //
 //            executer.run(commands);

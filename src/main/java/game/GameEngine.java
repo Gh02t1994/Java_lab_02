@@ -20,6 +20,7 @@ public class GameEngine implements IGameEngine {
         handlers.put("initMap", new InitMapHandler());
         handlers.put("print", new PrintHandler());
         handlers.put("endTurn", new EndTurnHandler());
+        handlers.put("printUnits", new printUnits());
     }
 
     public GameCond getCondition() {

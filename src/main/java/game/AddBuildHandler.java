@@ -40,8 +40,6 @@ public class AddBuildHandler implements IHandlerCommand {
         condition.getMap().add_Object(building);
         condition.add_building(building);
 
-        condition.getEventManager().Sent_notify(
-                "Построено здание " + buId
-        );
+        condition.getEventManager().Sent_notify("Построено здание " + buId);
     }
 }
